@@ -1,0 +1,6 @@
+/Users/bastien/Desktop/PizzayolaPeperoni/PizzayolaPeperoni/obj/x86/Debug/PizzayolaPeperoni.csprojResolveAssemblyReference.cache
+/Users/bastien/Desktop/PizzayolaPeperoni/PizzayolaPeperoni/obj/x86/Debug/PizzayolaPeperoni.csproj.CoreCompileInputs.cache
+/Users/bastien/Desktop/PizzayolaPeperoni/PizzayolaPeperoni/bin/Debug/PizzayolaPeperoni.exe
+/Users/bastien/Desktop/PizzayolaPeperoni/PizzayolaPeperoni/bin/Debug/PizzayolaPeperoni.pdb
+/Users/bastien/Desktop/PizzayolaPeperoni/PizzayolaPeperoni/obj/x86/Debug/PizzayolaPeperoni.exe
+/Users/bastien/Desktop/PizzayolaPeperoni/PizzayolaPeperoni/obj/x86/Debug/PizzayolaPeperoni.pdb
