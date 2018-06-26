@@ -3,8 +3,14 @@ namespace PizzayolaPeperoni.States
 {
     public class Completed : IState
     {
-        public Completed()
+        public int AddPizza(IPizza pizza, int quantity)
         {
+            return 2;
+        }
+
+        public int PayOrder(double price, int methode)
+        {
+            return 2;
         }
     }
 }

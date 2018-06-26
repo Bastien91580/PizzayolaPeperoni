@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -34,30 +33,37 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="IIngredient.cs" />
     <Compile Include="IPizza.cs" />
     <Compile Include="Order.cs" />
-    <Compile Include="Payement.cs" />
+    <Compile Include="Payment.cs" />
     <Compile Include="Ingredients\Tomatoes.cs" />
     <Compile Include="Ingredients\Mushrooms.cs" />
     <Compile Include="Ingredients\Ham.cs" />
     <Compile Include="Ingredients\Peperonies.cs" />
     <Compile Include="Ingredients\Cheese.cs" />
     <Compile Include="Ingredients\Anchovy.cs" />
-    <Compile Include="IState.cs" />
     <Compile Include="States\Received.cs" />
-    <Compile Include="States\Accepted.cs" />
     <Compile Include="States\InProgress.cs" />
     <Compile Include="States\Completed.cs" />
-    <Compile Include="States\InDelivery.cs" />
     <Compile Include="OrdreLine.cs" />
     <Compile Include="Ingredients\TomatoSauce.cs" />
     <Compile Include="Ingredients\CreamSauce.cs" />
     <Compile Include="Ingredients\Chicken.cs" />
+    <Compile Include="States\WaitPayement.cs" />
+    <Compile Include="States\Available.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="PaymentMethods\CBpayment.cs" />
+    <Compile Include="PaymentMethods\PaypalPayment.cs" />
+    <Compile Include="Ingredients\IIngredient.cs" />
+    <Compile Include="PaymentMethods\IPaymentMethod.cs" />
+    <Compile Include="States\IState.cs" />
+    <Compile Include="BasePizzas.cs" />
+    <Compile Include="CustomPizza.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Ingredients\" />
     <Folder Include="States\" />
+    <Folder Include="PaymentMethods\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

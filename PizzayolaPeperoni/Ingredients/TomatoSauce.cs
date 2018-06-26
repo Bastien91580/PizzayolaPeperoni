@@ -1,11 +1,11 @@
 ﻿using System;
-namespace PizzayolaPeperoni
+namespace PizzayolaPeperoni.Ingredients
 {
-    public class TomatoSauce
+    public class TomatoSauce : IIngredients
     {
         double price = 1;
 
-        protected double GetPrice()
+        public double GetPrice()
         {
             return price;
         }

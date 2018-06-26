@@ -1,7 +1,7 @@
 ﻿using System;
 namespace PizzayolaPeperoni.States
 {
-    public class InProgress : IState
+    public class Available : IState
     {
         public int AddPizza(IPizza pizza, int quantity)
         {

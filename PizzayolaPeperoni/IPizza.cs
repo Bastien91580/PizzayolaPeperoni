@@ -1,22 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using PizzayolaPeperoni.Ingredients;
 
 namespace PizzayolaPeperoni
 {
     public abstract class IPizza
     {
         protected List<IIngredients> ingredients;
-        protected double price = 0;
-
-        protected void AddIngredient (IIngredients ingredients){
-            this.ingredients.Add(ingredients);
-        }
-        /*
-        protected double GetPrice(){
-            price = 0;
-            foreach(var el in ingredients){
-                price += IIngredients.GetPrice(el);
-            }
-        }*/
+        protected double price = 5;
     }
 }

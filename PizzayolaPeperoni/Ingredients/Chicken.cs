@@ -1,11 +1,11 @@
 ﻿using System;
 namespace PizzayolaPeperoni.Ingredients
 {
-    public class Chicken
+    public class Chicken : IIngredients
     {
         double price = 2;
 
-        protected double GetPrice()
+        public double GetPrice()
         {
             return price;
         }

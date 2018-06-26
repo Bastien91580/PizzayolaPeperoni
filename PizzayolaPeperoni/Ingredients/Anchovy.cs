@@ -5,8 +5,10 @@ namespace PizzayolaPeperoni.Ingredients
     {
         double price = 2;
 
-        protected double GetPrice(){
+        public double GetPrice(){
             return price;   
         }
+
+
     }
 }
