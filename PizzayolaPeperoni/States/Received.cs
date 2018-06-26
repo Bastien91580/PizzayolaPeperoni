@@ -12,5 +12,10 @@ namespace PizzayolaPeperoni.States
         {
             return 2;
         }
+
+        public int TakeOf()
+        {
+            return 1;
+        }
     }
 }

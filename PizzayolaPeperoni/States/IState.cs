@@ -5,5 +5,7 @@ namespace PizzayolaPeperoni
     {
         int PayOrder(double price, int methode);
         int AddPizza(IPizza pizza, int quantity);
+        int TakeOf();
+
     }
 }

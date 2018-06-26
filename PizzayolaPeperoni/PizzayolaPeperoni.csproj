@@ -59,6 +59,9 @@
     <Compile Include="States\IState.cs" />
     <Compile Include="BasePizzas.cs" />
     <Compile Include="CustomPizza.cs" />
+    <Compile Include="States\End.cs" />
+    <Compile Include="IIterator.cs" />
+    <Compile Include="ConcreteIterator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Ingredients\" />

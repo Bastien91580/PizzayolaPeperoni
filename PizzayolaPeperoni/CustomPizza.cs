@@ -8,7 +8,17 @@ namespace PizzayolaPeperoni
     {
         public void AddIngredient(IIngredients ingredient){
             this.ingredients.Add(ingredient);
-            this.price += ingredient.GetPrice();
+        }
+
+        public double GetPrice(){
+            IIterator iterator = new ConcreteIterator(ingredients);
+            double ingredientPrice = iterator.GetFirstItem();
+            while(iterator.IsDone() == false){
+                ingredientPrice += iterator.NextItem();
+            }
+
+            this.price += ingredientPrice;
+            return this.price;
         }
 
     }

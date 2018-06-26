@@ -1,7 +1,7 @@
 ﻿using System;
 namespace PizzayolaPeperoni.States
 {
-    public class Available : IState
+    public class End : IState
     {
         public int AddPizza(IPizza pizza, int quantity)
         {
@@ -15,7 +15,7 @@ namespace PizzayolaPeperoni.States
 
         public int TakeOf()
         {
-            return 0;
+            return 2;
         }
     }
 }

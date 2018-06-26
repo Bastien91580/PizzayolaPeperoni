@@ -3,6 +3,7 @@ namespace PizzayolaPeperoni.States
 {
     public class InProgress : IState
     {
+
         public int AddPizza(IPizza pizza, int quantity)
         {
             return 2;
@@ -11,6 +12,11 @@ namespace PizzayolaPeperoni.States
         public int PayOrder(double price, int methode)
         {
             return 2;
+        }
+
+        public int TakeOf()
+        {
+            return 1;
         }
     }
 }
