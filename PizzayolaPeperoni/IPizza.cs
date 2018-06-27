@@ -6,7 +6,11 @@ namespace PizzayolaPeperoni
 {
     public abstract class IPizza
     {
-        protected List<IIngredients> ingredients;
-        protected double price = 5;
+        public List<IIngredients> ingredients = new List<IIngredients>();
+        public double price = 5;
+
+        public double GetPrice(){
+            return this.price;
+        }
     }
 }

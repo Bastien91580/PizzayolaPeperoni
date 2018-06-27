@@ -10,7 +10,7 @@ namespace PizzayolaPeperoni.States
 
         public int PayOrder(double price, int methode)
         {
-            return 2;
+            return 4;
         }
 
         public int TakeOf()

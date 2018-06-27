@@ -3,8 +3,8 @@ namespace PizzayolaPeperoni
 {
     public class OrdreLine
     {
-        IPizza pizza { get; set; }
-        int quantity  { get; set; } 
+        public IPizza pizza { get; set; }
+        public int quantity  { get; set; } 
 
         public OrdreLine(IPizza pizza, int quantity){
             this.pizza = pizza;

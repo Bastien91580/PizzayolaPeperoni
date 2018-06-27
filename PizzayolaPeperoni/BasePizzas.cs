@@ -8,7 +8,7 @@ namespace PizzayolaPeperoni
     {
         String Name;
 
-        BasePizzas(int choise){
+        public BasePizzas(int choise){
             switch(choise){
                 case 1:
                     this.Name = "Reine";
@@ -20,7 +20,7 @@ namespace PizzayolaPeperoni
                     break;
 
                 case 2:
-                    this.Name = "Fermier";
+                    this.Name = "Fermiere";
                     this.ingredients.Add(new TomatoSauce());
                     this.ingredients.Add(new Chicken());
                     this.ingredients.Add(new Cheese());
@@ -30,7 +30,7 @@ namespace PizzayolaPeperoni
 
                 case 3:
                     this.Name = "Blanche";
-                    this.ingredients.Add(new TomatoSauce());
+                    this.ingredients.Add(new CreamSauce());
                     this.ingredients.Add(new Ham());
                     this.ingredients.Add(new Cheese());
                     this.price = 15;
@@ -38,5 +38,10 @@ namespace PizzayolaPeperoni
             }
 
         }
+
+        public String GetName(){
+            return this.Name;
+        }
+
     }
 }
